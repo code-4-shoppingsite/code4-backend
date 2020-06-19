@@ -23,7 +23,7 @@ app.use('/storeManager',storeManagerRoute);
 const productCategory=require('./routes/ProductCategory');
 app.use('/productCategory',productCategory);
 
-//==================Cart=============================
+//==================Cart===============================
 const cartRouter=require('./routes/Cart');
 app.use('/cart',cartRouter);
 
