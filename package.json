@@ -35,5 +35,18 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
-  }
+  },
+  "builds": [{
+    "src": "app.js",
+    "use": "@now/node-server"
+}],
+"routes": [{
+  "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+  },
+  "src": "/.*",
+  "dest": "/index.js"
+}]
 }
